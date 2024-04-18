@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+	<head>
+		<title>IPR 621 Practical</title>
+	</head>
+	
+	<? php
+	
+	$name = "joel";
+	$age = 23;
+	$grade = 12;
+	
+	echo "your name is: $name <br>";
+	echo "your age is : $age <br>";
+	echo "your grade is: $grade";*/
+	
+	echo "<br>";
+	
+	$username="marc";
+	$confirm_username = "joel";
+	$password = "kapido";
+	$confirm_password = "kapido";
+	
+	if($username === $confirm_username && $password === $confirm_password){
+		echo "you have successfully login";
+	}
+	else{
+		echo "please enter correct details";
+	}*/
+	
+	$user_text = "I LOVE INTERNET PROGRAMMING!";
+	
+	echo trim($user_text);
+	echo "<br>";
+	echo strtolower($user_text);*/
+	
+	echo "<br>";
+	
+	$movies = array(
+	
+		array("title"=>"rush hour", "genre"=>"action", "year"=>2010),
+		array("title"=>"bad boys", "genre"=>"action", "year"=>2005),
+		array("title"=>"terminator", "genre"=>"action", "year"=>2004)
+		);
+		
+	foreach ($movies as $index => $movie){
+		echo "movie $index: ";
+		foreach ($movie as $key => $value){
+			echo "$key : $value";
+		}
+		echo "<br>";
+	}
+	
+	function calculateArea($length, $width){
+		$result = $length * $width;
+		return $result;
+	}
+	
+	echo "the area of the recyangle is: " . calculateArea(3,5);
+	
+	?>
+	
+</body>
+
+</html> 
